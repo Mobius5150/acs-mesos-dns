@@ -3,6 +3,6 @@ MAINTAINER Michael Blouin <contact@michaelblouin.ca>
 
 EXPOSE 53
 
-COPY config.js /config.js
+COPY config.json /config.json
 
-CMD ["/mesos-dns", "-config=/config.json"]
+CMD ["/mesos-dns", "-config=config.json"]
