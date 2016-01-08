@@ -5,4 +5,4 @@ EXPOSE 53
 
 COPY config.json /config.json
 
-CMD ["/mesos-dns", "-config=config.json"]
+CMD ["/mesos-dns", "-config=/config.json"]
